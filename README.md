@@ -14,6 +14,7 @@ There are two methods for getting started with this repo.
 ```
 	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
 	> cd ReduxSimpleStarter
+ > npm install --save redux-form@4.1.3 
 	> npm install
 	> npm start
 ```
