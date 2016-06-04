@@ -9,8 +9,14 @@ class PostsNew extends Component {
           router: PropTypes.object
      };
 
+     //on submit route back to index
      onSubmit(props) {
-          this.props.createPost(props);
+          this.props.createPost(props)
+               .then(() => {
+                    // post has been created, navigate the user to the index page
+                    // by calling this.context.router.push with new path
+                    this.context.router.push('/');
+               });
      }
      
      render () {
