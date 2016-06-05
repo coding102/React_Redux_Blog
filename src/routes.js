@@ -4,6 +4,7 @@ import { Route, IndexRoute } from 'react-router';
 import App from './components/app';
 import PostsIndex from './components/posts_index';
 import PostsNew from './components/posts_new';
+import PostsShow from './components/posts_show';
 
 
 
@@ -12,5 +13,8 @@ export default (
           // IndexRoute method adds component to index page
           <IndexRoute component={PostsIndex} />
           <Route path="posts/new" component={PostsNew} />
+          // this.props.params.id
+          <Route path="posts/:id" component={PostsShow} />
      </Route>
 );
+
